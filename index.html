@@ -14,10 +14,14 @@
         <link rel="stylesheet" href="assets/site.css">
         <link rel="stylesheet" href="assets/css.css">
         <link rel="stylesheet" href="assets/2356ee25bed07678b7ee-min.en-US.css">
-        <link rel="stylesheet" href="assets/3d7c904315a59dfa40cc-min.en-US  .css">
+        <link rel="stylesheet" href="assets/3d7c904315a59dfa40cc-min.en-US.css">
         <script type="text/javascript">
             function greeting() {
-                alert("You have been phished!");
+                var firstname = document.getElementById('form-firstname').value;
+                var lastname = document.getElementById('form-lastname').value;
+
+                alert("You have been phished! \nData will be collected and send to a remote server!");
+                return false;
               }
         </script>
     </head>
@@ -27,250 +31,89 @@
         <div class="sqs-announcement-bar-dropzone"></div>
         <div id="sidecarNav">
 
-            <div id="mobileNavWrapper" class="nav-wrapper"
-                data-content-field="navigation-mobileNav">
-                <nav id="mobileNavigation">
-
-                    <div class="collection homepage">
-                        <a href="/">
-                            Home
-                        </a>
-                    </div>
-
-                    <div class="folder">
-                        <div class="folder-toggle"
-                            data-href="/about">About</div>
-                        <div class="subnav">
-
-                            <div class="collection">
-                                <a href="/about-orfamerica">
-                                    About ORF America
-                                </a>
-                            </div>
-
-                            <div class="collection">
-                                <a href="/staff">
-                                    Who We Are
-                                </a>
-                            </div>
-
-                            <div class="collection">
-                                <a href="/internshipprogram">
-                                    Internship Program
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="folder">
-                        <div class="folder-toggle"
-                            data-href="/areas-of-focus">Areas of Focus</div>
-                        <div class="subnav">
-
-                            <div class="collection">
-                                <a href="/foreignpolicy-security">
-                                    Foreign Policy & Security
-                                </a>
-                            </div>
-
-                            <div class="collection">
-                                <a href="/technology-policy">
-                                    Technology Policy
-                                </a>
-                            </div>
-
-                            <div class="collection">
-                                <a href="/energy-climate">
-                                    Energy & Climate
-                                </a>
-                            </div>
-
-                            <div class="collection">
-                                <a href="/economic-development">
-                                    Global Economics & Development
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="folder">
-                        <div class="folder-toggle"
-                            data-href="/research-2">Research</div>
-                        <div class="subnav">
-
-                            <div class="collection">
-                                <a href="/analysis">
-                                    Recent Analysis
-                                </a>
-                            </div>
-
-                            <div class="collection">
-                                <a href="/reports">
-                                    Reports
-                                </a>
-                            </div>
-
-                            <div class="collection">
-                                <a href="/orf-america-comments-blog">
-                                    Comments
-                                </a>
-                            </div>
-
-                            <div class="collection">
-                                <a href="/in-the-media">
-                                    In The Media
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="folder">
-                        <div class="folder-toggle"
-                            data-href="/programs">Programs</div>
-                        <div class="subnav">
-
-                            <div class="collection">
-                                <a href="/major-initiatives">
-                                    Initiatives
-                                </a>
-                            </div>
-
-                            <div class="collection">
-                                <a href="/events">
-                                    Events
-                                </a>
-                            </div>
-
-                            <div class="collection">
-                                <a href="/leadership-development">
-                                    Leadership Development
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="folder active">
-                        <div class="folder-toggle"
-                            data-href="/concact1">Contact</div>
-                        <div class="subnav">
-
-                            <div class="collection active">
-                                <a href="/contact">
-                                    Contact
-                                </a>
-                            </div>
-
-                            <div class="collection">
-                                <a href="/employment-opportunities">
-                                    Employment Opportunities
-                                </a>
-                            </div>
-
-                            <div class="collection">
-                                <a href="/background-paper-submissions">
-                                    Submission Guidelines
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </nav>
-            </div>
-
         </div>
         <div id="siteWrapper" class="clearfix">
-
             <div class="sqs-cart-dropzone"></div>
-
             <header id="header" class="show-on-scroll"
                 data-offset-el=".index-section" data-offset-behavior="bottom"
                 role="banner">
                 <div class="header-inner">
                     <div id="logoWrapper" class="wrapper"
                         data-content-field="site-title">
-
-                        <h1 id="logoImage"><a href="/"><img
+                        <h1 id="logoImage">
+                            <a href="/">
+                                <img
                                     src="assets/Solid_Blue_Bkground_WithLine.png"
-                                    alt="ORF America" /></a></h1>
-
-                    </div><!--
-          --><div class="mobile-nav-toggle"><div class="top-bar"></div><div
-                            class="middle-bar"></div><div
-                            class="bottom-bar"></div></div><div
-                        class="mobile-nav-toggle fixed-nav-toggle"><div
-                            class="top-bar"></div><div
-                            class="middle-bar"></div><div
-                            class="bottom-bar"></div></div><!--
-          --><div id="headerNav">
-
+                                    alt="ORF America" />
+                            </a>
+                        </h1>
+                    </div>
+                    <div class="mobile-nav-toggle">
+                        <div class="top-bar"></div>
+                        <div class="middle-bar"></div>
+                        <div class="bottom-bar"></div>
+                    </div>
+                    <div class="mobile-nav-toggle fixed-nav-toggle">
+                        <div class="top-bar"></div>
+                        <div class="middle-bar"></div>
+                        <div class="bottom-bar"></div>
+                    </div>
+                    <div id="headerNav">
                         <div id="mainNavWrapper" class="nav-wrapper"
                             data-content-field="navigation-mainNav">
                             <nav id="mainNavigation"
                                 data-content-field="navigation-mainNav">
-
                                 <div class="collection homepage">
-                                    <a href="/">
-                                        Home
-                                    </a>
+                                    <a href="/">Home</a>
                                 </div>
 
                                 <div class="folder">
                                     <div class="folder-toggle"
                                         data-href="/about">About</div>
                                     <div class="subnav">
-
                                         <div class="collection">
-                                            <a href="/about-orfamerica">
-                                                About ORF America
-                                            </a>
+                                            <a href="/">About
+                                                ORF America</a>
                                         </div>
 
                                         <div class="collection">
-                                            <a href="/staff">
-                                                Who We Are
-                                            </a>
+                                            <a href="/">Who We Are</a>
                                         </div>
 
                                         <div class="collection">
-                                            <a href="/internshipprogram">
-                                                Internship Program
-                                            </a>
+                                            <a
+                                                href="/">Internship
+                                                Program</a>
                                         </div>
-
                                     </div>
                                 </div>
 
                                 <div class="folder">
                                     <div class="folder-toggle"
-                                        data-href="/areas-of-focus">Areas of
-                                        Focus</div>
+                                        data-href="/">
+                                        Areas of Focus
+                                    </div>
                                     <div class="subnav">
-
                                         <div class="collection">
-                                            <a href="/foreignpolicy-security">
+                                            <a href="/">
                                                 Foreign Policy & Security
                                             </a>
                                         </div>
 
                                         <div class="collection">
-                                            <a href="/technology-policy">
+                                            <a href="/">
                                                 Technology Policy
                                             </a>
                                         </div>
 
                                         <div class="collection">
-                                            <a href="/energy-climate">
+                                            <a href="/">
                                                 Energy & Climate
                                             </a>
                                         </div>
 
                                         <div class="collection">
-                                            <a href="/economic-development">
+                                            <a href="/">
                                                 Global Economics & Development
                                             </a>
                                         </div>
@@ -280,30 +123,26 @@
 
                                 <div class="folder">
                                     <div class="folder-toggle"
-                                        data-href="/research-2">Research</div>
+                                        data-href="/">Research</div>
                                     <div class="subnav">
-
                                         <div class="collection">
-                                            <a href="/analysis">
+                                            <a href="/">
                                                 Recent Analysis
                                             </a>
                                         </div>
-
                                         <div class="collection">
-                                            <a href="/reports">
+                                            <a href="/">
                                                 Reports
                                             </a>
                                         </div>
-
                                         <div class="collection">
                                             <a
-                                                href="/orf-america-comments-blog">
+                                                href="/">
                                                 Comments
                                             </a>
                                         </div>
-
                                         <div class="collection">
-                                            <a href="/in-the-media">
+                                            <a href="/">
                                                 In The Media
                                             </a>
                                         </div>
@@ -368,7 +207,6 @@
                         </div>
                         <!-- style below blocks out the mobile nav toggle only when nav is loaded -->
                         <style>.mobile-nav-toggle-label { display: inline-block !important; }</style>
-
                     </div>
                 </div>
             </header>
@@ -395,30 +233,8 @@
             </div>
 
             <main id="page" role="main">
-
-                <!--
-        --><!--
-        --><div id="folderNav" data-content-field="navigation-folderNav">
-                    <div class="folder-nav-toggle"></div>
-                    <nav class="folder-nav" role="navigation">
-                        <ul>
-                            <li class="nav-section-label">Contact</li>
-
-                            <li class="page-collection active-link"><a
-                                    href="/contact">Contact</a></li>
-
-                            <li class="page-collection"><a
-                                    href="/employment-opportunities">Employment
-                                    Opportunities</a></li>
-
-                            <li class="page-collection"><a
-                                    href="/background-paper-submissions">Submission
-                                    Guidelines</a></li>
-
-                        </ul>
-                    </nav>
-                </div><!--
-        --><div id="content" class="main-content"
+               
+                <div id="content" class="main-content"
                     data-content-field="main-content"
                     data-collection-id="5e78cb4b9484e45ba09f8566"
                     data-edit-main-image>
@@ -432,79 +248,28 @@
                                     data-border-radii="&#123;&quot;topLeft&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;,&quot;topRight&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;,&quot;bottomLeft&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;,&quot;bottomRight&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;&#125;"
                                     id="block-20786c3a080112997988"><div
                                         class="sqs-block-content">
+                                       
+                                    </div>
+                                </div>
+                                
+         <div class="sqs-layout sqs-grid-12 columns-12" data-type="page" data-updated-on="1737660114202" id="page-66c4da957c97cb050ffb29bd"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-41b7bae803f3db8308c2"><div class="sqs-block-content">
 
-                                        <div class="sqs-html-content">
-                                            <h1
-                                                style="white-space:pre-wrap;">Contact Us</h1>
-                                        </div>
-
-                                    </div></div><div
-                                    class="sqs-block image-block sqs-block-image"
-                                    data-block-type="5"
-                                    id="block-yui_3_17_2_1_1653837307418_2575"><div
-                                        class="sqs-block-content">
-
-                                        <div
-                                            class="
-          image-block-outer-wrapper
-          layout-caption-below
-          design-layout-inline
-          combination-animation-none
-          individual-animation-none
-          individual-text-animation-none
-        "
-                                            data-test="image-block-inline-outer-wrapper">
-
-                                            <figure
-                                                class="
-              sqs-block-image-figure
-              intrinsic
-            "
-                                                style="max-width:750px;">
-
-                                                <div
-                                                    class="image-block-wrapper"
-                                                    data-animation-role="image">
-                                                    <div
-                                                        class="sqs-image-shape-container-element has-aspect-ratio" style="position: relative; padding-bottom:66.66667175292969%; overflow: hidden;-webkit-mask-image: -webkit-radial-gradient(white, black);">
-                                                        <img
-                                                            data-stretch="false"
-                                                            data-src="assets/image.jpg"
-                                                            data-image="assets/image.jpg"
-                                                            data-image-dimensions="750x500"
-                                                            data-image-focal-point="0.5,0.5"
-                                                            alt
-                                                            data-load="false"
-                                                            elementtiming="system-image-block"
-                                                            src="assets/image.jpg"
-                                                            width="750"
-                                                            height="500" alt
-                                                            sizes="(max-width: 640px) 100vw, (max-width: 767px) 100vw, 100vw"
-                                                            style="display:block;object-fit: cover; width: 100%; height: 100%; object-position: 50% 50%"
-                                                            srcset="assets/image.jpg?format=100w 100w, assets/image.jpg?format=300w 300w, assets/image.jpg?format=500w 500w, assets/image.jpg?format=750w 750w, assets/image.jpg?format=1000w 1000w, assets/image.jpg?format=1500w 1500w, assets/image.jpg?format=2500w 2500w"
-                                                            loading="lazy"
-                                                            decoding="async"
-                                                            data-loader="sqs">
-
-                                                    </div>
-                                                </div>
-
-                                            </figure>
-
-                                        </div>
-
-                                    </div></div><div
+            <div class="sqs-html-content">
+              <h1 style="text-align:center;margin-left:40px;white-space:pre-wrap;">Job Opportunity </h1>
+              <h1 style="text-align:center;white-space:pre-wrap;">Fellow/Senior Fellow, Energy &amp; Climate</h1>
+              <p class="" data-rte-preserve-empty="true" style="white-space:pre-wrap;"></p>
+              <p style="margin-left:80px;white-space:pre-wrap;" class=""><strong>Position Title:</strong> Fellow/Senior Fellow                                                                          <strong>Areas of Focus:</strong> Energy &amp; Climate                                                                              <strong>Start Date: </strong>March 2025 (Full-Time)<br><strong>Location:</strong> Washington, D.C.                                                                                                      <strong>Application Deadline:</strong> February 14, 2025</p><p style="margin-left:80px;white-space:pre-wrap;" class=""><strong>About ORF America </strong></p><p style="margin-left:80px;white-space:pre-wrap;" class=""><strong>Job Summary</strong></p><p style="margin-left:80px;white-space:pre-wrap;" class="">ORF America is seeking a full-time Fellow or Senior Fellow with prior work experience in the field of cybersecurity, and assessing security threats to (i) conduct research on energy security, clean energy technologies, and sustainability, (ii) contribute analyses and commentary on related issues, and (iii) manage policy dialogues related to energy and the environment. The program will recruit high-performing individuals in intelligence or cybersecurity career paths from institutions of higher learning to support ORF America’s mission. During the 12-week program, participants will be immersed in a federal work environment by collaborating with subject matter expert mentors on projects and performing assigned tasks on the intelligence and cybersecurity track. </p><p style="margin-left:80px;white-space:pre-wrap;" class=""><strong>Qualifications</strong>: </p><ul data-rte-list="default" style="margin-left:80px;"><li><p class="" style="white-space:pre-wrap;">A professional or academic background in development, energy security, environmental studies, or a related field. </p></li><li><p class="" style="white-space:pre-wrap;">A Ph.D. in a related field of study or a master’s degree and five years of professional experience.</p></li><li><p class="" style="white-space:pre-wrap;">Fluency in both written and spoken English (additional language skills are a plus but are not required).</p></li><li><p class="" style="white-space:pre-wrap;">Strong research and analytical skills. Candidates should be able to conduct primary source research, offer insightful analysis, and analyze qualitative and quantitative data (experience with STATA or other statistical software is a plus but is not required).</p></li><li><p class="" style="white-space:pre-wrap;">Ability to manage multiple initiatives simultaneously, both within a team and independently, with a keen attention to detail and oversee research program and research assistants.</p></li><li><p class="" style="white-space:pre-wrap;">Eligibility to work in the United States. </p></li></ul><p style="margin-left:80px;white-space:pre-wrap;" class=""><strong>Responsibilities</strong> include but are not limited to:</p><ul data-rte-list="default" style="margin-left:80px;"><li><p class="" style="white-space:pre-wrap;">Conducting research on energy security, clean energy technologies, and sustainability.</p></li><li><p class="" style="white-space:pre-wrap;">Authoring both short- and long-form research reports and commentary on relevant subjects.</p></li><li><p class="" style="white-space:pre-wrap;">Managing policy dialogues on energy, and sustainability.</p></li><li><p class="" style="white-space:pre-wrap;">Writing grant proposals, funder reports, and managing relations with partners.</p></li></ul><p style="margin-left:80px;white-space:pre-wrap;" class=""><strong>Compensation</strong></p><p style="margin-left:80px;white-space:pre-wrap;" class="">ORF America offers a competitive compensation package commensurate with experience.&nbsp;The salary range for this role is $150,000-$200,000.</p><p style="margin-left:80px;white-space:pre-wrap;" class="">Benefits: Healthcare (medical, dental, vision), 403(b), life insurance (basic), short and long-term disability, and a generous paid time off policy.</p><p style="margin-left:80px;white-space:pre-wrap;" class=""><strong>How to Apply</strong></p><p style="margin-left:80px;white-space:pre-wrap;" class="">Interested applicants can fill out the application below or send an email to <a href="mailto:Andreas.Kuehn@oramerica.org"><span style="text-decoration:underline">Andreas.Kuehn@oramerica.org</span></a> in a single PDF file. Please include: “Job Application: Fellow/Energy &amp; Climate Program” in the subject line. ORF America will contact only those candidates who are extended an interview. </p><p style="margin-left:80px;white-space:pre-wrap;" class=""><strong>Applications will only be accepted through February 14. </strong>We encourage interested candidates to apply early as applications will be reviewed on a rolling basis.</p><p class="" style="white-space:pre-wrap;">&nbsp;</p>
+            </div>
+            </div></div></div></div></div>
+                                <div
                                     class="sqs-block form-block sqs-block-form"
                                     data-block-type="9" id="block-"><div
                                         class="sqs-block-content">
-
                                         <div
                                             id="form-submission-html-5e78cb4cbf50e4266f6acb58"
                                             class="sqs-form-block-submission-html"
                                             data-submission-html></div>
-
                                         <div class="form-wrapper">
-
                                             <div class="form-inner-wrapper">
                                                 <form
                                                     data-form-id="5e78cb4cbf50e4266f6acb58"
@@ -512,36 +277,32 @@
                                                     autocomplete="on"
                                                     method="POST"
                                                     onsubmit="return greeting()">
-                                                    <div
-                                                        class="field-list clear">
-
+                                                    <div class="field-list clear">
                                                         <fieldset
                                                             id="name-yui_3_17_2_1_1583956603981_13541"
                                                             class="form-item fields name required">
 
-                                                            <legend
-                                                                class="title">
+                                                            <legend class="title">
                                                                 Name
-
-                                                                <span
-                                                                    class="required"
-                                                                    aria-hidden="true">*</span>
-
+                                                                <span class="required" aria-hidden="true">*</span>
                                                             </legend>
 
                                                             <div
                                                                 class="field first-name">
-                                                                <label
-                                                                    class="caption">
+                                                                <label class="caption">
                                                                     <input
-                                                                        class="field-element field-control"
+                                                                        inputmode="latin-name"    
+                                                                        id="form-firstname"
+                                                                        class="YY8bsUECeaLgDGNn7yjy"
+                                                                        aria-invalid="true"
                                                                         name="fname"
                                                                         x-autocompletetype="given-name"
                                                                         type="text"
                                                                         spellcheck="false"
                                                                         maxlength="30"
                                                                         data-title="First"
-                                                                        aria-required="true" />
+                                                                        aria-required="true" 
+                                                                        required/>
                                                                     <span
                                                                         class="caption-text">First
                                                                         Name</span>
@@ -552,17 +313,18 @@
                                                                 <label
                                                                     class="caption">
                                                                     <input
-                                                                        class="field-element field-control"
+                                                                        inputmode="latin-name"
+                                                                        id="form-lastname"
+                                                                        class="YY8bsUECeaLgDGNn7yjy"
                                                                         name="lname"
                                                                         x-autocompletetype="surname"
                                                                         type="text"
                                                                         spellcheck="false"
                                                                         maxlength="30"
                                                                         data-title="Last"
-                                                                        aria-required="true" />
-                                                                    <span
-                                                                        class="caption-text">Last
-                                                                        Name</span>
+                                                                        aria-required="true"
+                                                                        required />
+                                                                    <span class="caption-text">Last Name</span>
                                                                 </label>
                                                             </div>
                                                         </fieldset>
@@ -573,8 +335,7 @@
 
                                                             <label class="title"
                                                                 for="email-yui_3_17_2_1_1583956603981_13542-field">
-                                                                Email
-
+                                                                Primary Email
                                                                 <span
                                                                     class="required"
                                                                     aria-hidden="true">*</span>
@@ -582,12 +343,14 @@
                                                             </label>
 
                                                             <input
-                                                                class="field-element"
-                                                                id="email-yui_3_17_2_1_1583956603981_13542-field"
+                                                                class="YY8bsUECeaLgDGNn7yjy"
+                                                                id="form-email"
                                                                 name="email"
                                                                 type="email"
                                                                 autocomplete="email"
                                                                 spellcheck="false"
+                                                                inputmode="email"
+                                                                required
                                                                 aria-required="true" />
                                                         </div>
 
@@ -597,19 +360,20 @@
 
                                                             <label class="title"
                                                                 for="text-yui_3_17_2_1_1583956603981_13543-field">
-                                                                Subject
-
-                                                                <span
-                                                                    class="required"
-                                                                    aria-hidden="true">*</span>
-
+                                                                Phone Number
+                                                                <span class="required" aria-hidden="true">*</span>
                                                             </label>
-
                                                             <input
-                                                                class="field-element text"
-                                                                type="text"
-                                                                id="text-yui_3_17_2_1_1583956603981_13543-field"
-                                                                aria-required="true" />
+                                                            type="tel"
+                                                            id="form-phone"
+                                                            name="phone"
+                                                            class="YY8bsUECeaLgDGNn7yjy"
+                                                            inputmode="numeric"
+                                                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                                            aria-required="true"
+                                                            required
+                                                            placeholder="000-000-0000"
+                                                          />
                                                         </div>
 
                                                         <div
@@ -618,12 +382,19 @@
 
                                                             <label class="title"
                                                                 for="textarea-yui_3_17_2_1_1583956603981_13544-field">
-                                                                Message
+                                                                Resume: <span class="required" aria-hidden="true">*</span>
+                                                            </label>
+                                                           <input
+                                                            class="button" 
+                                                            type="file"
+                                                            value="Upload"/>
+                                                        </div>
+                                                        <div id="textarea-yui_3_17_2_1_1583956603981_13544"
+                                                            class="form-item field textarea">
 
-                                                                <span
-                                                                    class="required"
-                                                                    aria-hidden="true">*</span>
-
+                                                            <label class="title"
+                                                                for="YY8bsUECeaLgDGNn7yjy">
+                                                                Cover Letter
                                                             </label>
 
                                                             <textarea
@@ -631,7 +402,6 @@
                                                                 id="textarea-yui_3_17_2_1_1583956603981_13544-field"
                                                                 aria-required="true"></textarea>
                                                         </div>
-
                                                     </div>
 
                                                     <div
@@ -663,11 +433,7 @@
                                     data-block-type="1337"
                                     data-definition-name="website.components.map"
                                     id="block-yui_3_17_2_1_1644423871048_2394"><div
-                                        class="sqs-block-content"><div
-                                            data-context="{&quot;blockId&quot;:&quot;yui_3_17_2_1_1644423871048_2394&quot;,&quot;location&quot;:{&quot;mapLat&quot;:38.9039889,&quot;mapLng&quot;:-77.0388605,&quot;mapZoom&quot;:12,&quot;addressLine1&quot;:&quot;1100 17th St. NW, Suite 501&quot;,&quot;addressLine2&quot;:&quot;Washington, DC, 20036&quot;,&quot;addressCountry&quot;:&quot;United States&quot;,&quot;markerLat&quot;:38.9039889,&quot;markerLng&quot;:-77.0388605,&quot;addressTitle&quot;:&quot;Observer Research Foundation America &quot;},&quot;vSize&quot;:null,&quot;style&quot;:1,&quot;labels&quot;:true,&quot;terrain&quot;:false,&quot;controls&quot;:false,&quot;hSize&quot;:null,&quot;floatDir&quot;:null,&quot;aspectRatio&quot;:65.26946107784431,&quot;gmak&quot;:&quot;QUl6YVN5Q0JUUk9xNkx1dkZfSUUxcjQ2LVQ0QWVUU1YtMGQ3bXk4&quot;,&quot;locale&quot;:{&quot;language&quot;:&quot;en&quot;,&quot;region&quot;:&quot;US&quot;,&quot;languageRegion&quot;:&quot;en-US&quot;},&quot;errors&quot;:[],&quot;featureFlags&quot;:{&quot;useCLDRMoneyFormat&quot;:true}}"
-                                            style="height: 100%; width: 100%">
-                                            &nbsp;
-                                        </div>
+                                        class="sqs-block-content">
                                     </div></div></div></div></div>
                 </div><!--
         -->
