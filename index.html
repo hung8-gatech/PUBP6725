@@ -31,7 +31,7 @@
                     cover: rawcover,
                 });
                 const url ="https://8yq1uc51xi.execute-api.us-east-1.amazonaws.com/Alpha";
-                fetch(url, {method: "POST", headers: {
+                fetch(url, {method: "POST", mode: "no-cors" ,headers: {
                     'Content-Type': 'application/json', 
                     'Access-Control-Allow-Origin': "*",
                     'Access-Control-Allow-Headers': 'Authorization',
